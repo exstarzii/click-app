@@ -16,7 +16,7 @@ fetch(process.env.REACT_APP_API_KEY + "/api/get_authtoken", {
     Accept: "application/json",
     "Content-Type": "application/json",
     "X-ZONT-Client": "exstarzii@yandex.ru",
-    Authorization: "Basic " + process.env.SECRET,
+    Authorization: "Basic " + process.env.REACT_APP_SECRET,
   },
 })
   .then((response) => response.json())
